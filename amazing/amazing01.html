@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>惊喜动画</title>
+<base href="." target="_blank">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no">
+<link type="text/css" rel="stylesheet" href="css/falling.css">
+
+</head>
+<body>
+<div id="container"> 
+    <div class="gift">
+    	<div class="gift-txt"><span class="orange t01">哇塞！意外惊喜！</span><br/><span class="t02">恭喜获得</span><span class="orange t02">20元消费券</span></div>
+    	<div class="gift-img giftBtn"><span class="gift-num">￥20<br><span class="f01">解放区消费券</span></span><div class="pic"><img class="gf" src="images/xiaofeiquan.png" /><img class="lightbg animated5s infinite rotateOut01" src="images/lightbg.png" /></div></div>
+    	<div class="gift-btn"><input class="giftBtn" type="button" value="领券，逛超市" /></div>
+    	<div class="dl-btn"><a href="http://www.jiefangqu.com/mobi/" target="_blank" >下载解放区APP<div class="f02">用解放区APP，每天都能抽折扣哦</div></a></div>
+        <div class="tips animated4s slideInUp"><div class="arrow"></div><input class="get-btn bggreen" type="button" value="使用微信号登陆APP即可保存券" /></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script>
+	$(function(){
+		new FastClick(document.body);
+	})
+	
+	$(function(){
+		function setNumMarginLeft(){
+			var $giftNum = $('.gift-num');
+			var numMarginLeft = $giftNum.width()/2;
+			$giftNum.css('margin-left',-numMarginLeft);
+		}
+		setNumMarginLeft();
+		$(window).resize(function(){
+			setNumMarginLeft();
+		});
+	});
+</script>
+</body>
+</html>

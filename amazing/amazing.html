@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>惊喜动画</title>
+<base href="." target="_blank">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no">
+<link type="text/css" rel="stylesheet" href="css/falling.css">
+
+</head>
+<body>
+<div id="container"> 
+    <div class="gift dsn">
+    	<div class="gift-txt opacity0"><span class="orange t01">哇塞！意外惊喜！</span><br/><span class="t02">恭喜获得</span><span class="orange t02">20元消费券</span></div>
+    	<div class="gift-img giftBtn"><span class="gift-num dsn">￥20<br><span class="f01">解放区消费券</span></span><div class="pic"><img class="gf" src="images/xiaofeiquan.png" /><img class="lightbg animated5s infinite rotateOut01 dsn" src="images/lightbg.png" /></div></div>
+    	<div class="gift-btn dsn"><input class="giftBtn" type="button" value="领取消费券" /></div> 
+        <ul class="share-info dsn">
+        	<li class="bold">已领取消费券<br>分享还有再抢的机会哦~</li>
+        	<li class="share-btn"><a href="#" target="_blank"><img src="images/share-icon.png" /><br>微信朋友圈</a></li>
+        </ul>
+        <div class="close-btn dsn">关闭</div>
+    </div>
+    <ul class="eggs">
+    	<li class="animated1s bounceInDown"><img src="images/egg-big.png" /></li>
+    	<li class="animated2s bounceInDown"><img src="images/egg-big.png" /></li>
+    	<li class="animated3s bounceInDown"><img src="images/egg-big.png" /></li>
+    </ul>
+    <div id="fallingContainer">
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script>
+	$(function(){
+		new FastClick(document.body);
+	})
+</script>
+<script type="text/javascript" src="js/falling.js"></script>
+<script type="text/javascript" src="js/jquery.eggs.js"></script>
+</body>
+</html>
